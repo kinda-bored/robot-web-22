@@ -20,6 +20,14 @@ body{
     width:100%;
     
   }
+  .past{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .mow{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
   
   .navbar {
     overflow: hidden;

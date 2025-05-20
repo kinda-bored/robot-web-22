@@ -26,6 +26,7 @@
   .dropdown {
     float: left;
     overflow: hidden;
+    
   }
   
   
@@ -38,12 +39,13 @@
     background-color: inherit;
     font-family: inherit; 
     margin: 0; 
+    border-radius: 20px;
   }
   
   
-  .navbar a:hover, .dropdown:hover .dropbtn {
+  .cool a:hover, .dropdown:hover .dropbtn {
     background-color: red;
-    border-radius:100px;
+    border-radius:20px
   }
   
   .dropdown-content {
@@ -53,6 +55,7 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 20px;
   }
   
   
@@ -68,7 +71,7 @@
   
   .dropdown-content a:hover {
     background-color: #ddd;
-    border-radius:0px;
+    
     
   }
   
@@ -76,6 +79,14 @@
   .dropdown:hover .dropdown-content {
     display: block;
     
+  }
+  .past{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .mow{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
   }
   
   *{

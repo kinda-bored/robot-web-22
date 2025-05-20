@@ -154,6 +154,14 @@
   .form-block{
     padding:1px;
   }
+  .past{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .mow{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
   .metting{
     left:40vw;
     position: absolute;
