@@ -43,7 +43,7 @@
   
   
   .navbar .cool:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #982c2d;
     border-radius:20px;
     
   }
@@ -96,7 +96,7 @@
   }
   .image1{
     width: 28vw;
-    border-radius: 100%;
+    border-radius: 200px;
     margin-left: 1vw;
     margin-top: 8vw;
     
@@ -126,7 +126,7 @@
     background: black;
     padding: 10px 0;
     box-sizing: border-box;
-    border-radius: 100px;
+    
   }
   
   .marquee-content {
@@ -178,8 +178,17 @@
   }
   .meet{
     position: absolute;
-    left: 50vw;
-    top: 4vw;
+    left: 62vw;
+    top: 2vw;
     font-size: xx-large;
   }
-
+.footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color:#982c2d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
