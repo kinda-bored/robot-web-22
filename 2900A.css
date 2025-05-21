@@ -43,7 +43,7 @@
   }
   
   
-  .cool a:hover, .dropdown:hover .dropbtn {
+  .navbar .cool:hover, .dropdown:hover .dropbtn {
     background-color: red;
     border-radius:20px
   }
