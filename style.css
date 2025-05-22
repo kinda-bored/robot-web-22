@@ -182,13 +182,185 @@
     top: 2vw;
     font-size: xx-large;
   }
-.footer{
+#footer{
   position: absolute;
-  bottom: 0;
+  top: 50vw;
   left: 0;
-  width: 100%;
+  margin: 0;
   background-color:#982c2d;
-  color: white;
+  color: white; 
   text-align: center;
+  width: 100%;
+  
+}
+.pbox{
+  display:flex;
+  border:solid 1px;
+  
+}
+.face{
+  display:flex;
+}
+.pbox{
+  width:100px;
+  height:150px;
+  top:200px;
+  position:relative;
+  left:5vw;
+}
+
+
+  
+
+.jphoto{
+  width:100px;
+  height:100px;
+  
+  
+}
+.joshphoto{
+  width:99px;
+
+}
+#josh{
+  display:flex;
+  flex-direction:column;
+  
+}
+#nathan{
+  display:flex;
+  flex-direction:column;
+  
+}
+.nathanphoto{
+  width:99px;
+}
+.nphoto{
+  width:100px;
+  height:100px;
+}
+#will{
+  display:flex;
+  flex-direction:column;
+  
+}
+.willphoto{
+  width:99px;
+}
+.wphoto{
+  width:100px;
+  height:100px;
+}
+#troy{
+  display:flex;
+  flex-direction:column;
+  
+}
+.troyphoto{
+  width:99px;
+}
+.tphoto{
+  width:100px;
+  height:100px;
+}
+table{
+  width:80%;
+  margin:20px auto;
+  border-collapse:separate;
+
+}
+ th, td{
+  border:solid black 2px;
+  padding:3px;
+  text-align:left;
+  border-radius:10px;
+}
+min-wbody {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}
+
+.letters {
+  margin-top: 20px;
+}
+
+.letter {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 24px;
+  line-height: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.letter.active {
+  background-color: yellow;
+  color: black;
+  transform: scale(1.2);
+}
+
+#displayText {
+  margin-top: 20px;
+  font-size: 18px;
   padding: 10px;
+  border: 2px solid white;
+  display: inline-block;
+  min-width: 300px;
+
+}
+.no{
+  border:white;
+}
+
+.contact-container {
+  margin-top: 4vw;
+  padding: 2vw;
+}
+
+form {
+  max-width: 60vw;
+  margin: auto;
+  background: white;
+  padding: 2vw;
+  border-radius: 1vw;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-size: 1.4vw;
+  margin-bottom: 0.5vw;
+  text-align: left;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1vw;
+  font-size: 1.4vw;
+  margin-bottom: 2vw;
+  border: 0.2vw solid #ccc;
+  border-radius: 0.5vw;
+}
+
+button {
+  padding: 1vw 2vw;
+  font-size: 1.4vw;
+  border: none;
+  background-color: #00733d;
+  color: white;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00562a;
 }
