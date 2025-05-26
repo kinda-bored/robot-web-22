@@ -280,8 +280,13 @@ min-wbody {
 
 .letters {
   margin-top: 20px;
+ 
 }
-
+.info{
+  border:solid 1px;
+  text-align: center;
+  
+}
 .letter {
   display: inline-block;
   width: 50px;
