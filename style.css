@@ -188,75 +188,29 @@
   width: 100%;
   bottom: 0;
 }
-.pbox{
-  display:flex;
-  border:solid 1px;
-  
-}
 .face{
   display:flex;
-}
-.pbox{
-  width:100px;
-  height:150px;
-  top:200px;
-  position:relative;
-  left:5vw;
-}
-
-
-  
-
-.jphoto{
-  width:100px;
-  height:100px;
-  
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   
 }
-.joshphoto{
-  width:99px;
-
+.me{
+  width: 20%;
+  margin: 3%;
+  font-size: xx-large;
+  border-radius: 30px;
 }
-#josh{
-  display:flex;
-  flex-direction:column;
-  
+.card{
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
 }
-#nathan{
-  display:flex;
-  flex-direction:column;
-  
-}
-.nathanphoto{
-  width:99px;
-}
-.nphoto{
-  width:100px;
-  height:100px;
-}
-#will{
-  display:flex;
-  flex-direction:column;
-  
-}
-.willphoto{
-  width:99px;
-}
-.wphoto{
-  width:100px;
-  height:100px;
-}
-#troy{
-  display:flex;
-  flex-direction:column;
-  
-}
-.troyphoto{
-  width:99px;
-}
-.tphoto{
-  width:100px;
-  height:100px;
+.aphoto{
+  width:15vw;
+  height: 25vh;
+  border-radius: 30px;
 }
 table{
   width:80%;
