@@ -3,45 +3,49 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-        <div class="navbar">
-          <a href="index.html" class="cool">Home</a>
-          <a href="results" class="cool">results</a>
-          <a href="awards.html" class="cool">awards</a>
-          <div class="dropdown">
-            <button class="dropbtn">teams
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="2900A.html" class="mow">2900A</a>
-              <a href="new_team.html">new team</a>
-              <a href="past_teams.html" class="past">past teams</a>
-            </div>
-          </div>
-          <a href="contact2.html" class="cool">contact us</a>
+    <div class="navbar">
+      <a href="index.html" class="cool">Home</a>
+      <a href="results" class="cool">results</a>
+      <a href="awards.html" class="cool">awards</a>
+      <div class="dropdown">
+        <button class="dropbtn">teams
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="2900A.html" class="mow">2900A</a>
+          <a href="new_team.html">new team</a>
+          <a href="past_teams.html" class="past">past teams</a>
         </div>
-      <div class="contact-container">
-        <h2>Contact Us</h2>
-        <form id="contactForm" action="http://localhost:3000/contact" method="post">
-          <div class="form-field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-        
-          <div class="form-field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <input type="submit" class="submit" value="Send Message">
-        </form>
-        <div id="thankyou" style="display:none; color:green; font-size:1.5vw; text-align:center;">
-          Thank you for your message!
+      </div>
+      <a href="contact2.html" class="cool">contact us</a>
+    </div>
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <form id="contactForm" action="http://localhost:3000/contact" method="post">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
         </div>
-      </div>  
-      <script>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+      
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <input type="submit" class="submit" value="Send Message">
+      </form>
+      <div id="thankyou" style="display:none; color:green; font-size:1.5vw; text-align:center;">
+        Thank you for your message!
+      </div>
+    </div>  
+    <footer id="footer">
+      <p>© 2023 Onehunga High School Robotics</p>
+      <p>All rights reserved. </p>
+    </footer>
+    <script>
       document.getElementById('contactForm').addEventListener('submit', async function(e) {
         e.preventDefault();
         const form = e.target;
@@ -62,10 +66,6 @@
           alert('There was a problem submitting your message.');
         }
       });
-      </script>
-    </body>
-    <footer id="footer">
-      <p>© 2023 Onehunga High School Robotics</p>
-      <p>All rights reserved. </p>
-    </footer>
+    </script>
+  </body>
 </html>
