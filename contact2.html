@@ -41,31 +41,31 @@
           Thank you for your message!
         </div>
       </div>  
-  </body>
-  <footer id="footer">
-    <p>© 2023 Onehunga High School Robotics</p>
-    <p>All rights reserved. </p>
-  </footer>
-  <script>
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
-  e.preventDefault();
-  const form = e.target;
-  const data = {
-    name: form.name.value,
-    email: form.email.value,
-    message: form.message.value
-  };
-  const response = await fetch(form.action, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data)
-  });
-  if (response.ok) {
-    form.style.display = 'none';
-    document.getElementById('thankyou').style.display = 'block';
-  } else {
-    alert('There was a problem submitting your message.');
-  }
-});
-</script>
+      <script>
+      document.getElementById('contactForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = {
+          name: form.name.value,
+          email: form.email.value,
+          message: form.message.value
+        };
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (response.ok) {
+          form.style.display = 'none';
+          document.getElementById('thankyou').style.display = 'block';
+        } else {
+          alert('There was a problem submitting your message.');
+        }
+      });
+      </script>
+    </body>
+    <footer id="footer">
+      <p>© 2023 Onehunga High School Robotics</p>
+      <p>All rights reserved. </p>
+    </footer>
 </html>
