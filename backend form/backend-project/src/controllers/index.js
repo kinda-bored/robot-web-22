@@ -1,7 +1,7 @@
-class IndexController {
-    getIndex(req, res) {
-        res.send('Welcome to the backend project!');
+const IndexController = {
+    getIndex: (req, res) => {
+        res.send('Hello from the backend!');
     }
-}
+};
 
-export default IndexController;
+module.exports = IndexController;

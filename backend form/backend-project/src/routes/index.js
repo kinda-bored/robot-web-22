@@ -1,8 +1,7 @@
 function setRoutes(app) {
-    const IndexController = require('../controllers/index').IndexController;
-    const indexController = new IndexController();
+    const IndexController = require('../controllers');
 
-    app.get('/', indexController.getIndex.bind(indexController));
+    app.get('/', IndexController.getIndex);
 }
 
 module.exports = setRoutes;

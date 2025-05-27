@@ -1,13 +1,18 @@
 // This file exports data models, which may include schemas for a database or other data structures used in the application.
 
-export const UserModel = {
+const UserModel = {
     name: String,
     email: String,
     password: String,
 };
 
-export const PostModel = {
+const PostModel = {
     title: String,
     content: String,
     author: String,
 };
+
+const IndexController = require('../controllers');
+const indexController = IndexController;
+
+module.exports = { UserModel, PostModel };
