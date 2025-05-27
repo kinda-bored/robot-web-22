@@ -30,7 +30,6 @@
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required />
         </div>
-      
         <div class="form-field">
           <label for="message">Message</label>
           <textarea id="message" name="message" required></textarea>
@@ -46,8 +45,10 @@
       <p>All rights reserved. </p>
     </footer>
     <script>
+      alert('Script loaded!');
       document.getElementById('contactForm').addEventListener('submit', async function(e) {
         e.preventDefault();
+        alert('Form submitted!');
         const form = e.target;
         const data = {
           name: form.name.value,
