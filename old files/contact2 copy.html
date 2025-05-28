@@ -21,7 +21,7 @@
     </div>
     <div class="contact-container">
       <h2>Contact Us</h2>
-      <form id="contactForm" action="index.html" method="post">
+      <form id="contactForm" action="https://robot-web-22.onrender.com" method="post">
         <div class="form-field">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required />
@@ -44,5 +44,29 @@
       <p>© 2023 Onehunga High School Robotics</p>
       <p>All rights reserved. </p>
     </footer>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = {
+          name: form.name.value,
+          email: form.email.value,
+          message: form.message.value
+        };
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (response.ok) {
+          form.style.display = 'none';
+          document.getElementById('thankyou').style.display = 'block';
+        } else {
+          document.getElementById('thankyou').style.display = 'block';
+          document.getElementById('thankyou').style.color = 'red';
+          document.getElementById('thankyou').textContent = 'There was a problem submitting your message.';
+        }
+      });
+    </script>
   </body>
 </html>
