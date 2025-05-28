@@ -201,6 +201,10 @@
   font-size: xx-large;
   border-radius: 30px;
 }
+.me p{
+  font-size: medium;
+  padding: 10px;
+}
 .card{
   text-align: center;
   border-radius: 3px;
