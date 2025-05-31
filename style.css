@@ -50,7 +50,7 @@
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 2000; /* increased z-index to ensure dropdown is above marquee */
+  z-index: 2000; 
   border-radius: 20px;
 }
 
@@ -167,7 +167,7 @@ input, textarea {
   margin-bottom: 2vw;
   border: 0.2vw solid #ccc;
   border-radius: 0.5vw;
-  color: #222; /* Override to dark text for readability */
+  color: #222; 
 }
 button {
   padding: 1vw 2vw;
@@ -243,7 +243,7 @@ th, td{
   padding:3px;
   text-align:left;
   border-radius:10px;
-  color: white; /* Make all table text white by default */
+  color: white; 
 }
 
 /* =====================
@@ -263,7 +263,7 @@ min-wbody {
   padding-top: 20vh;
   text-align: center;
 }
-.letter {
+ .teamAt,.teamBt,.teamCt{
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -278,7 +278,7 @@ min-wbody {
   transition: background 0.3s ease, transform 0.2s ease;
   text-align: center;
 }
-.letter.active {
+.teamAt.active,.teamBt.active,.teamCt.active {
   background-color: yellow;
   color: black;
   transform: scale(1.2);
@@ -332,7 +332,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white; /* Make all text white by default for readability */
+  color: white; 
 }
 .main-content {
   flex: 1 0 auto;
