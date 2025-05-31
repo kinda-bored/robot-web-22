@@ -1,4 +1,4 @@
-  .banner {
+.banner {
     background-color:#00733d;
     color:white;
     width:100%;
@@ -55,7 +55,7 @@
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 2000; /* increased z-index to ensure dropdown is above marquee */
 
     border-radius: 20px;
   }
@@ -93,6 +93,8 @@
     justify-content:center;
     align-items:center;
     margin:0;
+    background-image: url(background.jpg);
+    padding-bottom: 0;
   }
   .image1{
     width: 28vw;
@@ -104,7 +106,15 @@
   }
  
   .marquee{
-    position:fixed
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    background: black;
+    padding: 10px 0;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    z-index: 10;
     
   }
   .about{
@@ -117,14 +127,6 @@
     
    font-size: 1.5vw;
      
-  }
-  .marquee {
-    width: 100vw;
-    overflow: hidden;
-    background: black;
-    padding: 10px 0;
-    box-sizing: border-box;
-    
   }
   
   .marquee-content {
@@ -180,23 +182,20 @@
     top: 2vw;
     font-size: xx-large;
   }
-#footer{
-  background-color:#982c2d;
-  color: white; 
-  text-align: center; 
-  width: 100%;
-  height: auto;
- 
-  position: absolute;
-}
-.footer{
+#footer, .footer{
   background-color: #982c2d;
   color: white;
   text-align: center;
   width: 100%;
+  height: auto;
+  position: static;
+  left: 0;
   bottom: 0;
-  position: absolute;
+  z-index: 100;
+  padding: 10px 0;
+  margin-top: 40px;
 }
+
 .face{
   display:flex;
   width: 100%;
@@ -334,4 +333,136 @@ button {
 
 button:hover {
   background-color: #00562a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .banner h1, .banner h2 {
+    font-size: 4vw;
+  }
+  .navbar a, .dropdown .dropbtn {
+    font-size: 3vw;
+    padding: 2vw 2vw;
+  }
+  .about {
+    left: 5vw;
+    top: 60vh;
+    width: 90vw;
+    font-size: 3vw;
+    position: static;
+    margin: 2vw auto;
+  }
+  .image1 {
+    width: 60vw;
+    border-radius: 100vw;
+    margin: 2vw auto;
+    position: static;
+    display: block;
+  }
+  .face {
+    flex-direction: column;
+    align-items: center;
+  }
+  .me {
+    width: 80vw;
+    margin: 4vw 0;
+    font-size: x-large;
+  }
+  .aphoto {
+    width: 50vw;
+    height: auto;
+  }
+  .meet {
+    left: 0;
+    top: auto;
+    font-size: 3vw;
+    position: static;
+    margin: 2vw 0;
+  }
+  .marquee-content span {
+    font-size: 5vw;
+    padding: 0 5vw;
+  }
+  .contact-container {
+    margin-top: 8vw;
+    padding: 4vw;
+  }
+  form {
+    max-width: 95vw;
+    padding: 4vw;
+  }
+  label, input, textarea, button {
+    font-size: 3vw;
+  }
+  table {
+    width: 98vw;
+    font-size: 3vw;
+  }
+  th, td {
+    font-size: 3vw;
+    padding: 2vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .banner h1, .banner h2 {
+    font-size: 6vw;
+  }
+  .navbar a, .dropdown .dropbtn {
+    font-size: 4vw;
+    padding: 3vw 2vw;
+  }
+  .about {
+    font-size: 4vw;
+    width: 98vw;
+    left: 1vw;
+    top: auto;
+    position: static;
+    margin: 2vw auto;
+  }
+  .image1 {
+    width: 90vw;
+    border-radius: 100vw;
+    margin: 2vw auto;
+    position: static;
+    display: block;
+  }
+  .me {
+    width: 95vw;
+    font-size: large;
+  }
+  .aphoto {
+    width: 80vw;
+    height: auto;
+  }
+  .marquee-content span {
+    font-size: 7vw;
+    padding: 0 3vw;
+  }
+  .meet {
+    font-size: 4vw;
+    left: 0;
+    top: auto;
+    position: static;
+    margin: 2vw 0;
+  }
+  .contact-container {
+    margin-top: 10vw;
+    padding: 2vw;
+  }
+  form {
+    max-width: 99vw;
+    padding: 2vw;
+  }
+  label, input, textarea, button {
+    font-size: 4vw;
+  }
+  table {
+    width: 99vw;
+    font-size: 4vw;
+  }
+  th, td {
+    font-size: 4vw;
+    padding: 2vw;
+  }
 }
