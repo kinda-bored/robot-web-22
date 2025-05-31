@@ -1,207 +1,216 @@
+/* =====================
+   Banner & Navbar Styles (Top)
+   ===================== */
 .banner {
-    background-color:#00733d;
-    color:white;
-    width:100%;
-    
-  }
-  
-  .navbar {
-    overflow: hidden;
-    background-color: #00733d;
-    font-family: Arial;
-  }
-  
-  
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  
-  }
-  
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; 
-    margin: 0; 
-    border-radius: 20px;
-  }
-  
-  
-  .navbar .cool:hover, .dropdown:hover .dropbtn {
-    background-color: #982c2d;
-    border-radius:20px;
-    
-  }
-
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 2000; /* increased z-index to ensure dropdown is above marquee */
-
-    border-radius: 20px;
-  }
-  
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-   
-    
-  }
-  
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-    
-  }
-  
-  *{
-    margin:0;
-    padding:0;
-  }
-  
-  body{
-    
-    justify-content:center;
-    align-items:center;
-    margin:0;
-    background-image: url(background.jpg);
-    padding-bottom: 0;
-  }
-  .image1{
-    width: 28vw;
-    border-radius: 200px;
-    margin-left: 1vw;
-    margin-top: 8vh;
-    top: 20vh;
-   position: fixed; 
-  }
- 
-  .marquee{
-    position: relative;
-    width: 100vw;
-    overflow: hidden;
-    background: black;
-    padding: 10px 0;
-    box-sizing: border-box;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    
-  }
-  .about{
-    position:fixed;
-    left:40vw;
-    top:40vh;
-    width:40vw;
-   
-    overflow: hidden;
-    
-   font-size: 1.5vw;
-     
-  }
-  
-  .marquee-content {
-    display: inline-flex;
-    animation: scroll 12s linear infinite;
-    white-space: nowrap;
-  }
-  
-  .marquee-content span {
-    color: white;
-    font-size: 36px;
-    font-weight: bold;
-    padding: 0 50px; 
-  }
-  
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-  .contact-form{
-    padding:1vw;
-    width:100vw;
-    position:static;
-  }
-  .form-block{
-    padding:1px;
-  }
-  .past{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-  .mow{
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-  }
-  .metting{
-    left:40vw;
-    position: absolute;
-    top:35vw;
-    font-size: xxx-large;
-  }
-  .cool a{
-  font-size: 70px;
-  }
-  .meet{
-    position: absolute;
-    left: 62vw;
-    top: 2vw;
-    font-size: xx-large;
-  }
-#footer, .footer{
-  background-color: #982c2d;
-  color: white;
-  text-align: center;
-  width: 100%;
-  height: auto;
-  position: static;
-  left: 0;
-  bottom: 0;
-  z-index: 100;
-  padding: 10px 0;
-  margin-top: 40px;
+  background-color:#00733d;
+  color:white;
+  width:100%;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #00733d;
+  font-family: Arial;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+  border-radius: 20px;
+}
+
+.navbar .cool:hover, .dropdown:hover .dropbtn {
+  background-color: #982c2d;
+  border-radius:20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2000; /* increased z-index to ensure dropdown is above marquee */
+  border-radius: 20px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* =====================
+   Page-Specific CSS Sections
+   ===================== */
+/* --- Home/About Page --- */
+.image1 {
+  width: 28vw;
+  border-radius: 200px;
+  margin-left: 1vw;
+  margin-top: 8vh;
+  top: 20vh;
+  left: 0;
+  position: fixed;
+  z-index: 100;
+  pointer-events: none;
+}
+.about{
+  position:fixed;
+  left:40vw;
+  top:40vh;
+  width:40vw;
+  overflow: hidden;
+  font-size: 1.5vw;
+  background: rgba(255,255,255,0.85);
+  color: #222;
+  border-radius: 20px;
+  padding: 2vw;
+  z-index: 101;
+}
+
+/* --- Marquee --- */
+.marquee{
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  background: black;
+  padding: 10px 0;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.marquee-content {
+  display: inline-flex;
+  animation: scroll 12s linear infinite;
+  white-space: nowrap;
+}
+.marquee-content span {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 0 50px; 
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* --- Contact Page --- */
+.contact-form{
+  padding:1vw;
+  width:100vw;
+  position:static;
+}
+.form-block{
+  padding:1px;
+}
+.contact-container {
+  margin-top: 4vw;
+  padding: 2vw;
+  text-align: center;
+}
+form {
+  max-width: 60vw;
+  margin: auto;
+  background: white;
+  padding: 2vw;
+  border-radius: 1vw;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+}
+label {
+  display: block;
+  font-size: 1.4vw;
+  margin-bottom: 0.5vw;
+  text-align: left;
+}
+input, textarea {
+  width: 100%;
+  padding: 1vw;
+  font-size: 1.4vw;
+  margin-bottom: 2vw;
+  border: 0.2vw solid #ccc;
+  border-radius: 0.5vw;
+  color: #222; /* Override to dark text for readability */
+}
+button {
+  padding: 1vw 2vw;
+  font-size: 1.4vw;
+  border: none;
+  background-color: #00733d;
+  color: white;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #00562a;
+}
+
+/* --- Past Teams/Results/Awards/Other Pages --- */
+.past{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.mow{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.metting{
+  left:40vw;
+  position: absolute;
+  top:35vw;
+  font-size: xxx-large;
+}
+.cool a{
+  font-size: 70px;
+}
+.meet{
+  position: absolute;
+  left: 62vw;
+  top: 2vw;
+  font-size: xx-large;
+}
 .face{
   display:flex;
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  
 }
 .me{
   width: 20%;
@@ -228,14 +237,18 @@ table{
   width:80%;
   margin:30px auto;
   border-collapse:separate;
-
 }
- th, td{
+th, td{
   border:solid black 2px;
   padding:3px;
   text-align:left;
   border-radius:10px;
+  color: white; /* Make all table text white by default */
 }
+
+/* =====================
+   Results Letters Section
+   ===================== */
 min-wbody {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -243,15 +256,12 @@ min-wbody {
   color: white;
   padding: 20px;
 }
-
 .letters {
   margin-top: 20px;
- 
 }
 .info{
   padding-top: 20vh;
   text-align: center;
-  
 }
 .letter {
   display: inline-block;
@@ -268,13 +278,11 @@ min-wbody {
   transition: background 0.3s ease, transform 0.2s ease;
   text-align: center;
 }
-
 .letter.active {
   background-color: yellow;
   color: black;
   transform: scale(1.2);
 }
-
 #displayText {
   margin-top: 20px;
   font-size: 18px;
@@ -282,60 +290,61 @@ min-wbody {
   border: 2px solid white;
   display: inline-block;
   min-width: 300px;
-
 }
 .no{
   border:white;
 }
 
-.contact-container {
-  margin-top: 4vw;
-  padding: 2vw;
-  text-align: center;
-  
-  
-}
-
-form {
-  max-width: 60vw;
-  margin: auto;
-  background: white;
-  padding: 2vw;
-  border-radius: 1vw;
-  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
-}
-
-label {
-  display: block;
-  font-size: 1.4vw;
-  margin-bottom: 0.5vw;
-  text-align: left;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 1vw;
-  font-size: 1.4vw;
-  margin-bottom: 2vw;
-  border: 0.2vw solid #ccc;
-  border-radius: 0.5vw;
-}
-
-button {
-  padding: 1vw 2vw;
-  font-size: 1.4vw;
-  border: none;
-  background-color: #00733d;
+/* =====================
+   Footer Styles (Bottom)
+   ===================== */
+#footer, .footer {
+  margin-top: auto;
+  background-color: #982c2d;
   color: white;
-  border-radius: 0.5vw;
-  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  position: static;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  padding: 10px 0;
+  margin-bottom: 0;
 }
 
-button:hover {
-  background-color: #00562a;
+/* =====================
+   Shared/Global Styles & Media Queries (Very Bottom)
+   ===================== */
+*{
+  margin:0;
+  padding:0;
+}
+html, body {
+  height: 100%;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white; /* Make all text white by default for readability */
+}
+.main-content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Responsive adjustments */
+.item, .about {
+  flex-shrink: 0;
+}
+
+/* --- Responsive Media Queries --- */
 @media (max-width: 900px) {
   .banner h1, .banner h2 {
     font-size: 4vw;
@@ -353,11 +362,15 @@ button:hover {
     margin: 2vw auto;
   }
   .image1 {
-    width: 60vw;
-    border-radius: 100vw;
-    margin: 2vw auto;
     position: static;
+    width: 90vw;
+    border-radius: 30vw;
+    margin: 2vw auto;
     display: block;
+    top: auto;
+    left: auto;
+    z-index: 1;
+    pointer-events: auto;
   }
   .face {
     flex-direction: column;
@@ -421,11 +434,15 @@ button:hover {
     margin: 2vw auto;
   }
   .image1 {
-    width: 90vw;
-    border-radius: 100vw;
-    margin: 2vw auto;
     position: static;
+    width: 98vw;
+    border-radius: 40vw;
+    margin: 2vw auto;
     display: block;
+    top: auto;
+    left: auto;
+    z-index: 1;
+    pointer-events: auto;
   }
   .me {
     width: 95vw;
