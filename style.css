@@ -237,13 +237,15 @@ table{
   width:80%;
   margin:30px auto;
   border-collapse:separate;
+  padding: 1vw;
 }
 th, td{
-  border:solid black 2px;
+  border:solid white 2px;
   padding:3px;
   text-align:left;
   border-radius:10px;
   color: white; 
+  padding: 1vw;
 }
 
 /* =====================
