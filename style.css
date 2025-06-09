@@ -1,10 +1,32 @@
 /* =====================
-   Banner & Navbar Styles (Top)
+   Reset & Global Styles
+   ===================== */
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-image: url(image/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* =====================
+   Banner & Navbar Styles
    ===================== */
 .banner {
-  background-color:#00733d;
-  color:white;
-  width:100%;
+  background-color: #00733d;
+  color: white;
+  width: 100%;
 }
 
 .navbar {
@@ -12,7 +34,6 @@
   background-color: #00733d;
   font-family: Arial;
 }
-
 .navbar a {
   float: left;
   font-size: 16px;
@@ -21,12 +42,10 @@
   padding: 14px 16px;
   text-decoration: none;
 }
-
 .dropdown {
   float: left;
   overflow: hidden;
 }
-
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
@@ -34,26 +53,23 @@
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; 
-  margin: 0; 
+  font-family: inherit;
+  margin: 0;
   border-radius: 20px;
 }
-
 .navbar .cool:hover, .dropdown:hover .dropbtn {
   background-color: #982c2d;
-  border-radius:20px;
+  border-radius: 20px;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 2000; 
+  z-index: 2000;
   border-radius: 20px;
 }
-
 .dropdown-content a {
   float: none;
   color: black;
@@ -62,19 +78,74 @@
   display: block;
   text-align: left;
 }
-
 .dropdown-content a:hover {
   background-color: #ddd;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 /* =====================
-   Page-Specific CSS Sections
+   Banner Content Styles
    ===================== */
-/* --- Home/About Page --- */
+.cool a {
+  font-size: 70px;
+}
+.mow {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.past {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.metting {
+  left: 40vw;
+  position: absolute;
+  top: 35vw;
+  font-size: xxx-large;
+}
+
+/* --- Meeting Text --- */
+.meet {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(0,115,61,0.92);
+  border: none;
+  border-radius: 1.2em;
+  padding: 0.35em 1.5em;
+  margin: 0.7em auto 0.4em auto;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  letter-spacing: 0.04em;
+  box-shadow: 0 2px 8px 0 #0001;
+  display: block;
+  text-align: center;
+  text-shadow: 0 1px 2px #003d1f44;
+  max-width: 90vw;
+}
+@media (max-width: 700px) {
+  .meet {
+    font-size: 1.05em;
+    padding: 0.22em 0.7em;
+    border-radius: 1em;
+    margin: 0.4em auto 0.2em auto;
+    max-width: 98vw;
+  }
+}
+@media (max-width: 500px) {
+  .meet {
+    font-size: 0.98em;
+    padding: 0.13em 0.3em;
+    border-radius: 0.7em;
+    margin: 0.18em auto 0.1em auto;
+    max-width: 99vw;
+  }
+}
+
+/* =====================
+   Home/About Page Styles
+   ===================== */
 .image1 {
   width: 28vw;
   border-radius: 200px;
@@ -86,11 +157,11 @@
   z-index: 100;
   pointer-events: none;
 }
-.about{
-  position:fixed;
-  left:40vw;
-  top:40vh;
-  width:40vw;
+.about {
+  position: fixed;
+  left: 40vw;
+  top: 40vh;
+  width: 40vw;
   overflow: hidden;
   font-size: 1.5vw;
   background: rgba(255,255,255,0.85);
@@ -100,8 +171,10 @@
   z-index: 101;
 }
 
-/* --- Marquee --- */
-.marquee{
+/* =====================
+   Marquee Styles
+   ===================== */
+.marquee {
   position: relative;
   width: 100vw;
   overflow: hidden;
@@ -121,7 +194,7 @@
   color: white;
   font-size: 36px;
   font-weight: bold;
-  padding: 0 50px; 
+  padding: 0 50px;
 }
 @keyframes scroll {
   0% {
@@ -132,14 +205,16 @@
   }
 }
 
-/* --- Contact Page --- */
-.contact-form{
-  padding:1vw;
-  width:100vw;
-  position:static;
+/* =====================
+   Contact Page Styles
+   ===================== */
+.contact-form {
+  padding: 1vw;
+  width: 100vw;
+  position: static;
 }
-.form-block{
-  padding:1px;
+.form-block {
+  padding: 1px;
 }
 .contact-container {
   margin-top: 4vw;
@@ -167,7 +242,7 @@ input, textarea {
   margin-bottom: 2vw;
   border: 0.2vw solid #ccc;
   border-radius: 0.5vw;
-  color: #222; 
+  color: #222;
 }
 button {
   padding: 1vw 2vw;
@@ -182,70 +257,48 @@ button:hover {
   background-color: #00562a;
 }
 
-/* --- Past Teams/Results/Awards/Other Pages --- */
-.past{
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-.mow{
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-}
-.metting{
-  left:40vw;
-  position: absolute;
-  top:35vw;
-  font-size: xxx-large;
-}
-.cool a{
-  font-size: 70px;
-}
-.meet{
-  position: absolute;
-  left: 62vw;
-  top: 2vw;
-  font-size: xx-large;
-}
-.face{
-  display:flex;
+/* =====================
+   Past Teams/Results/Awards/Other Pages Styles
+   ===================== */
+.face {
+  display: flex;
   width: 100%;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.me{
+.me {
   width: 20%;
   margin: 3%;
   font-size: xx-large;
   border-radius: 30px;
 }
-.me p{
+.me p {
   font-size: medium;
   padding: 10px;
 }
-.card{
+.card {
   text-align: center;
   border-radius: 3px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   border-radius: 30px;
 }
-.aphoto{
-  width:15vw;
+.aphoto {
+  width: 15vw;
   height: 25vh;
   border-radius: 30px;
 }
-table{
-  width:80%;
-  margin:30px auto;
-  border-collapse:separate;
+table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: separate;
   padding: 1vw;
 }
-th, td{
-  border:solid white 2px;
-  padding:3px;
-  text-align:left;
-  border-radius:10px;
-  color: white; 
+th, td {
+  border: solid white 2px;
   padding: 1vw;
+  text-align: left;
+  border-radius: 10px;
+  color: white;
 }
 
 /* =====================
@@ -261,11 +314,11 @@ min-wbody {
 .letters {
   margin-top: 20px;
 }
-.info{
+.info {
   padding-top: 20vh;
   text-align: center;
 }
- .teamAt,.teamBt,.teamCt{
+.teamAt, .teamBt, .teamCt {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -280,7 +333,7 @@ min-wbody {
   transition: background 0.3s ease, transform 0.2s ease;
   text-align: center;
 }
-.teamAt.active,.teamBt.active,.teamCt.active {
+.teamAt.active, .teamBt.active, .teamCt.active {
   background-color: yellow;
   color: black;
   transform: scale(1.2);
@@ -293,12 +346,12 @@ min-wbody {
   display: inline-block;
   min-width: 300px;
 }
-.no{
-  border:white;
+.no {
+  border: white;
 }
 
 /* =====================
-   Footer Styles (Bottom)
+   Footer Styles
    ===================== */
 #footer, .footer {
   margin-top: auto;
@@ -316,37 +369,8 @@ min-wbody {
 }
 
 /* =====================
-   Shared/Global Styles & Media Queries (Very Bottom)
+   Responsive Media Queries
    ===================== */
-*{
-  margin:0;
-  padding:0;
-}
-html, body {
-  height: 100%;
-}
-body{
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow-x: hidden;
-  background-image: url(image/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: white; 
-}
-.main-content {
-  flex: 1 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.item, .about {
-  flex-shrink: 0;
-}
-
-/* --- Responsive Media Queries --- */
 @media (max-width: 900px) {
   .banner h1, .banner h2 {
     font-size: 4vw;
@@ -418,7 +442,6 @@ body{
     padding: 2vw;
   }
 }
-
 @media (max-width: 600px) {
   .banner h1, .banner h2 {
     font-size: 6vw;
@@ -486,42 +509,9 @@ body{
   }
 }
 
-/* --- Simpler, friendlier .meet style: centered, soft background, rounded, no border, more padding --- */
-.meet {
-  font-size: 1.25em;
-  font-weight: 500;
-  color: #fff;
-  background: rgba(0,115,61,0.92);
-  border: none;
-  border-radius: 1.2em;
-  padding: 0.35em 1.5em;
-  margin: 0.7em auto 0.4em auto;
-  font-family: 'Segoe UI', 'Arial', sans-serif;
-  letter-spacing: 0.04em;
-  box-shadow: 0 2px 8px 0 #0001;
-  display: block;
-  text-align: center;
-  text-shadow: 0 1px 2px #003d1f44;
-  max-width: 90vw;
-}
-@media (max-width: 700px) {
-  .meet {
-    font-size: 1.05em;
-    padding: 0.22em 0.7em;
-    border-radius: 1em;
-    margin: 0.4em auto 0.2em auto;
-    max-width: 98vw;
-  }
-}
-@media (max-width: 500px) {
-  .meet {
-    font-size: 0.98em;
-    padding: 0.13em 0.3em;
-    border-radius: 0.7em;
-    margin: 0.18em auto 0.1em auto;
-    max-width: 99vw;
-  }
-}
+/* =====================
+   Cookie Banner Styles
+   ===================== */
 .cookie-banner {
   position: fixed;
   bottom: 40px;
