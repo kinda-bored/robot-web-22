@@ -99,30 +99,14 @@ body {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.metting {
-  left: 40vw;
-  position: absolute;
-  top: 35vw;
-  font-size: xxx-large;
-}
+
 
 /* --- Meeting Text --- */
-.meet {
-  font-size: 1.25em;
-  font-weight: 500;
-  color: #fff;
-  background: rgba(0,115,61,0.92);
-  border: none;
-  border-radius: 1.2em;
-  padding: 0.35em 1.5em;
-  margin: 0.7em auto 0.4em auto;
-  font-family: 'Segoe UI', 'Arial', sans-serif;
-  letter-spacing: 0.04em;
-  box-shadow: 0 2px 8px 0 #0001;
-  display: block;
-  text-align: center;
-  text-shadow: 0 1px 2px #003d1f44;
-  max-width: 90vw;
+.meet{
+  position:absolute;
+  left:50vw;
+  text-align: center; 
+  height: auto;
 }
 @media (max-width: 700px) {
   .meet {
