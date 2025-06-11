@@ -107,7 +107,7 @@ body {
   position:absolute;
   left:50vw;
   text-align: center; 
-  top: 5vh;
+  top:6vh;
 }
 @media (max-width: 700px) {
   .meet {
