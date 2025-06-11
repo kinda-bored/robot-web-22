@@ -200,6 +200,7 @@ body {
 }
 .form-block {
   padding: 1px;
+  
 }
 .contact-container {
   margin-top: 4vw;
@@ -219,6 +220,7 @@ label {
   font-size: 1.4vw;
   margin-bottom: 0.5vw;
   text-align: left;
+  color: black;
 }
 input, textarea {
   width: 100%;
